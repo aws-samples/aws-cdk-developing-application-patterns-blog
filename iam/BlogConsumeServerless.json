@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BlogConsumeServerless",
+            "Effect": "Allow",
+            "Action": [
+                "apigateway:*",
+                "cloudformation:*",
+                "codeartifact:Describe*",
+                "codeartifact:Get*",
+                "codeartifact:List*",
+                "codeartifact:ReadFromRepository",
+                "dynamodb:*",
+                "iam:AttachRolePolicy",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:DeleteRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:GetRole",
+                "iam:PassRole",
+                "iam:PutRolePolicy",
+                "lambda:*",
+                "s3:*",
+                "sts:GetServiceBearerToken",
+                "kms:*",
+                "logs:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

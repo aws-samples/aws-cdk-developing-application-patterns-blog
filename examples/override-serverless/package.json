@@ -1,0 +1,22 @@
+{
+  "name": "override-serverless",
+  "version": "1.0.0",
+  "description": "Sample serverless application - part 2",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-cdk": "1.68.0",
+    "@types/node": "10.17.5",
+    "typescript": "~3.7.2"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.68.0",
+    "@aws-cdk/aws-lambda": "1.68.0",
+    "serverless-infrastructure": "1.0.1"
+  }
+}

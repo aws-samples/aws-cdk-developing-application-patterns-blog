@@ -1,0 +1,17 @@
+*.js
+*.d.ts
+node_modules
+.DS_Store
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Test related files
+coverage
+/jest.config.js
+!jest.config.js
+
+# Parcel build directories
+.cache
+.build

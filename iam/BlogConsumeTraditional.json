@@ -1,0 +1,44 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BlogConsumeTraditional",
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:*",
+                "cloudformation:*",
+                "codeartifact:Describe*",
+                "codeartifact:Get*",
+                "codeartifact:List*",
+                "codeartifact:ReadFromRepository",
+                "ec2:*",
+                "elasticloadbalancing:*",
+                "iam:AddRoleToInstanceProfile",
+                "iam:AttachRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:CreateRole",
+                "iam:CreateServiceLinkedRole",
+                "iam:DeleteInstanceProfile",
+                "iam:DeleteRole",
+                "iam:DeleteRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:GetInstanceProfile",
+                "iam:GetRole",
+                "iam:GetRolePolicy",
+                "iam:PassRole",
+                "iam:PutRolePolicy",
+                "iam:RemoveRoleFromInstanceProfile",
+                "rds:*",
+                "secretsmanager:*",
+                "ssm:Describe*",
+                "ssm:Get*",
+                "ssm:List*",
+                "ssm:PutConfigurePackageResult",
+                "sts:GetServiceBearerToken",
+                "kms:*",
+                "logs:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

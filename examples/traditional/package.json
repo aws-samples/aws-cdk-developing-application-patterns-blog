@@ -1,0 +1,16 @@
+{
+  "name": "traditional",
+  "version": "1.0.0",
+  "description": "Sample traditional application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-cdk/core": "1.68.0",
+    "aws-cdk": "1.68.0",
+    "traditional-infrastructure": "1.0.1"
+  }
+}

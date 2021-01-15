@@ -1,0 +1,45 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BlogPublishArtifacts",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CancelUpdateStack",
+                "cloudformation:ContinueUpdateRollback",
+                "cloudformation:CreateChangeSet",
+                "cloudformation:CreateStack",
+                "cloudformation:CreateStackInstances",
+                "cloudformation:CreateStackSet",
+                "cloudformation:CreateUploadBucket",
+                "cloudformation:DeleteChangeSet",
+                "cloudformation:DeleteStack",
+                "cloudformation:DeleteStackInstances",
+                "cloudformation:DeleteStackSet",
+                "cloudformation:Describe*",
+                "cloudformation:DetectStackDrift",
+                "cloudformation:DetectStackResourceDrift",
+                "cloudformation:DetectStackSetDrift",
+                "cloudformation:EstimateTemplateCost",
+                "cloudformation:ExecuteChangeSet",
+                "cloudformation:Get*",
+                "cloudformation:List*",
+                "cloudformation:RegisterType",
+                "cloudformation:SetTypeDefaultVersion",
+                "cloudformation:SignalResource",
+                "cloudformation:StopStackSetOperation",
+                "cloudformation:TagResource",
+                "cloudformation:UntagResource",
+                "cloudformation:UpdateStack",
+                "cloudformation:UpdateStackInstances",
+                "cloudformation:UpdateStackSet",
+                "cloudformation:UpdateTerminationProtection",
+                "cloudformation:ValidateTemplate",
+                "codeartifact:*",
+                "sts:GetServiceBearerToken",
+                "s3:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
