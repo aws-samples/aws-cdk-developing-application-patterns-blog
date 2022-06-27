@@ -10,8 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "typescript": "~3.7.2",
-    "aws-cdk": "1.68.0",
-    "@aws-cdk/core": "1.68.0",
-    "@aws-cdk/aws-codeartifact": "1.68.0"
+    "aws-cdk": "^1.68.0",
+    "@aws-cdk/core": "^1.68.0",
+    "@aws-cdk/aws-codeartifact": "^1.68.0"
   }
 }

@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aws-cdk/core": "1.68.0",
+    "@aws-cdk/core": "^1.68.0",
     "serverless-infrastructure": "1.0.1",
-    "aws-cdk": "1.68.0"
+    "aws-cdk": "^1.68.0"
   }
 }

@@ -91,7 +91,7 @@ export class ServerlessInfrastructureStack extends core.Stack {
         let lambdaSrcFilePath: string = path.join(basePath, 'src')
 
         var handler = (props.lambdaHandler) ? props.lambdaHandler : 'lambda-function.handler'
-        var runtime = (props.lambdaRuntime) ? props.lambdaRuntime : lambda.Runtime.NODEJS_10_X
+        var runtime = (props.lambdaRuntime) ? props.lambdaRuntime : lambda.Runtime.NODEJS_16_X
         var src = (props.lambdaSrc) ? props.lambdaSrc : lambdaSrcFilePath
         var partitionKey = (props.ddbPartitionKey) ? props.ddbPartitionKey : 'itemId'
         var environmentVars:{[key:string]:any} = (props.lambdaEnvVariables) ? props.lambdaEnvVariables : {
