@@ -9,7 +9,7 @@ export class MyServerlessStack extends serverless.ServerlessInfrastructureStack 
                 ddbPartitionKey: "v2ItemId",
                 lambdaSrc: "src",
                 lambdaHandler: "override-lambda-function.lambda_handler",
-                lambdaRuntime: lambda.Runtime.NODEJS_10_X,
+                lambdaRuntime: lambda.Runtime.NODEJS_16_X,
                 lambdaEnvVariables: {
                     DYNAMODB_TABLE_NAME: "v2-DynamoDBTable",
                     PARTITION_KEY: "v2ItemId"

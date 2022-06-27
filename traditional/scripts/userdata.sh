@@ -5,10 +5,12 @@ exec > >(tee -ia /var/log/user-data.log)
 exec 2> >(tee -ia /var/log/user-data.log >&2)
 
 date "+%Y-%m-%d %H:%M:%S"
+yum install -y python38
 echo "Installing pip"
-easy_install install pip
+curl -s -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
 echo "Installed pip. Installing Python packages"
-pip install boto3 flask mysql-connector-python
+/usr/local/bin/pip3 install boto3 flask mysql-connector-python
 echo "Installed boto3, flask and mysql-connector-python"
 
 current_working_directory=$(pwd)
@@ -114,7 +116,7 @@ app.run(host='0.0.0.0', port=80)
 EOL
 echo "Created app"
 
-python code.py &
+python3 code.py &
 
 echo "Started flask app in background"
 date "+%Y-%m-%d %H:%M:%S"

@@ -11,19 +11,20 @@ export class CodeArtifactResources extends core.Stack {
         })
         const blogNpmRepo = new codeartifact.CfnRepository(this, 'BlogNPMRepository', {
             repositoryName: 'blog-npm-store',
+            domainName: domain.domainName,
             externalConnections: [
                 'public:npmjs'
             ]
         })
-        blogNpmRepo.addOverride('Properties.DomainName', domain.domainName)
         blogNpmRepo.addDependsOn(domain)
+
         const blogRepo = new codeartifact.CfnRepository(this, 'BlogRepo', {
             repositoryName: 'blog-repository',
+            domainName: domain.domainName,
             upstreams: [
                 blogNpmRepo.repositoryName
             ]
         })
-        blogRepo.addOverride('Properties.DomainName', domain.domainName)
         blogRepo.addDependsOn(blogNpmRepo)
     }
 }
